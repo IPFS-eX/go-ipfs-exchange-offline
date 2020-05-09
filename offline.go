@@ -9,6 +9,7 @@ import (
 	cid "github.com/ipfs/go-cid"
 	blockstore "github.com/ipfs/go-ipfs-blockstore"
 	exchange "github.com/ipfs/go-ipfs-exchange-interface"
+	"github.com/libp2p/go-libp2p-core/peer"
 )
 
 func Exchange(bs blockstore.Blockstore) exchange.Interface {
@@ -19,6 +20,10 @@ func Exchange(bs blockstore.Blockstore) exchange.Interface {
 // For use in offline mode.
 type offlineExchange struct {
 	bs blockstore.Blockstore
+}
+
+func (_ *offlineExchange) Push(ctx context.Context, num uint32, peer peer.ID, c cid.Cid) error {
+	return nil
 }
 
 // GetBlock returns nil to signal that a block could not be retrieved for the

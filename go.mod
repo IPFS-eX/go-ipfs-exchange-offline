@@ -8,4 +8,7 @@ require (
 	github.com/ipfs/go-ipfs-blocksutil v0.0.1
 	github.com/ipfs/go-ipfs-exchange-interface v0.0.1
 	github.com/ipfs/go-ipfs-util v0.0.1
+	github.com/libp2p/go-libp2p-core v0.5.3
 )
+
+go 1.13
