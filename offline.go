@@ -8,7 +8,7 @@ import (
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	blockstore "github.com/ipfs/go-ipfs-blockstore"
-	exchange "github.com/ipfs/go-ipfs-exchange-interface"
+	exchange "github.com/ETHFSx/go-ipfs-exchange-interface"
 	"github.com/libp2p/go-libp2p-core/peer"
 )
 
