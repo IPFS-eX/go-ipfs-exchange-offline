@@ -1,7 +1,7 @@
-module github.com/ETHFSx/go-ipfs-exchange-offline
+module github.com/IPFS-eX/go-ipfs-exchange-offline
 
 require (
-	github.com/ETHFSx/go-ipfs-exchange-interface v0.0.2
+	github.com/IPFS-eX/go-ipfs-exchange-interface v0.0.0-20200601100630-f19054f38398
 	github.com/ipfs/go-block-format v0.0.2
 	github.com/ipfs/go-cid v0.0.5
 	github.com/ipfs/go-datastore v0.4.1
